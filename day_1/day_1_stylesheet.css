@@ -22,6 +22,8 @@ li {list-style-type: none;}
 	height: 3px;
 }
 
+.bold {font-weight: bold; color: #ABC8E2}
+
 /** HEADER **/
 
 header {
@@ -38,14 +40,6 @@ header {
 .banner {
 	text-align: center;
 	width: 100%;
-}
-
-.banner_text {
-	position: absolute;
-	z-index: 1;
-	left: 0;
-	right: 0;
-	top: 20%;
 }
 
 .banner_text h2, h3 {
@@ -91,6 +85,62 @@ footer {
 
 footer a {color: black}
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.banner_text {
+		top: 20%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.banner_text {
+		top: 20%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.banner_text {
+		top: 20%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.banner_text {
+		top: 20%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.banner_text {
+		top: 20%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
+}
 
 
 
