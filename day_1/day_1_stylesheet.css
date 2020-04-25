@@ -96,6 +96,10 @@ footer a {color: black}
 		right: 0;
 	}
 
+	header {
+		height: 90px;
+	}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
