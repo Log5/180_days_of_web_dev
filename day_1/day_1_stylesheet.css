@@ -1,0 +1,96 @@
+/** 
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Baloo Bhaina 2', cursive;
+**/
+
+/** BASIC SETTINGS **/
+
+body {
+	background-color: white;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+h1, h2, h3, h4 {font-family: 'Roboto', sans-serif;}
+
+p, a, li {font-family: 'Baloo Bhaina 2', cursive;}
+
+li {list-style-type: none;}
+
+.separation {
+	background-color: #375D81;
+	height: 3px;
+}
+
+/** HEADER **/
+
+header {
+	color: #E70739;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	margin-top: -22px;
+	padding: 15px 0 15px 0;
+}
+
+/** BANNER **/
+
+.banner {
+	text-align: center;
+	width: 100%;
+}
+
+.banner_text {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 20%;
+}
+
+.banner_text h2, h3 {
+	color: #E70739;
+}
+
+#banner_img {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+/** SKILLS LIST **/
+
+.skills_list {
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: white;
+}
+
+.soft_skill {
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px 10px;
+	margin-bottom: 40px;
+	background-color: #046380;
+	box-shadow: 5px 5px 5px grey;
+	border: 1px solid #002F2F;
+
+}
+
+.soft_skill a {color: white;}
+
+/** FOOTER **/
+
+footer {
+	color: black;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	padding: 15px 0 15px 0;
+}
+
+footer a {color: black}
+
+
+
+
