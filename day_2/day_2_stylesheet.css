@@ -45,12 +45,20 @@ h1, p {font-family: 'Dancing Script', cursive;}
 	font-size: 20px;
 	position: absolute;
 	left: 10%;
+	padding-top: 70px;
 }
 
 .reference_r {
 	font-size: 20px;
 	position: absolute;
 	right: 10%;
+	padding-top: 70px;	
+}
+
+.reference_m {
+	font-size: 20px;
+	position: absolute;
+	padding-top: 70px;	
 }
 
 #roseanna {background-image: linear-gradient(to right, #ffafbd, #ffc3a0)}
@@ -108,5 +116,15 @@ footer a {color: black}
 
 @media only screen and (max-width: 600px) {
 	.small_screens {font-size: 25px;}
+	.reference_m {right: 41%;}
+
+}
+
+@media only screen and (min-width: 600px) {
+	.reference_m {right: 46%;}
+}
+
+@media only screen and (min-width: 800px) {
+	.reference_m {right: 47%;}
 }
 
