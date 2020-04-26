@@ -39,8 +39,8 @@ header:after {clear: both;}
 .hello {
 	border-bottom: 1px solid grey;
 	padding-bottom: 20px;
+	margin-bottom: 40px;
 	margin-top: 10px;
-	margin-bottom: 30px;
 	margin-left: 40px;
 	margin-right: 40px;
 }
@@ -59,28 +59,28 @@ header:after {clear: both;}
 	margin-bottom: -10px;
 }
 
-#instagram {text-decoration: underline; color: #5f5f5f;}
 
 /** TODAY'S WEBPAGE **/
 
 .today {
 	text-align: center;
-	border-bottom: 1px solid grey;
+	color: white;
+	border-radius: 25px 25px;
+	box-shadow: 2px 2px 2px grey;
+	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-top: 10px;
 	margin-bottom: 30px;
 	margin-left: 40px;
 	margin-right: 40px;
+	background-image: linear-gradient(to right, #eb3349, #f45c43);
 }
 
-#webpage {
-	font-weight: bold;
-}
+#webpage {font-weight: bold;}
 
 
 /** WEB PAGES LIST **/
 
-.web_pages_list {}
+.web_pages_list li {margin-bottom: 5px;}
 
 /** FOOTER **/
 
