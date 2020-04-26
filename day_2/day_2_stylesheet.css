@@ -41,6 +41,18 @@ h1, p {font-family: 'Dancing Script', cursive;}
 	border-radius: 20px 20px;
 }
 
+.reference_l {
+	font-size: 20px;
+	position: absolute;
+	left: 10%;
+}
+
+.reference_r {
+	font-size: 20px;
+	position: absolute;
+	right: 10%;
+}
+
 #roseanna {background-image: linear-gradient(to right, #ffafbd, #ffc3a0)}
 #sexy_blue {background-image: linear-gradient(to right, #2193b0, #6dd5ed)}
 #purple_love {background-image: linear-gradient(to right, #cc2b5e, #753a88)}
