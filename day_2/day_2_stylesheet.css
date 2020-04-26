@@ -1,0 +1,100 @@
+/** 
+
+font-family: 'Dancing Script', cursive;
+
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid grey;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+h1, p {font-family: 'Dancing Script', cursive;}
+
+/** COLOR **/
+
+.color {
+	color: white;
+	font-size: 40px;
+	text-shadow: 2px 1px 2px grey;
+	text-align: center;
+	line-height: 200px;
+	height: 200px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	box-shadow: 4px 4px 4px grey;
+	border-radius: 20px 20px;
+}
+
+#roseanna {background-image: linear-gradient(to right, #ffafbd, #ffc3a0)}
+#sexy_blue {background-image: linear-gradient(to right, #2193b0, #6dd5ed)}
+#purple_love {background-image: linear-gradient(to right, #cc2b5e, #753a88)}
+#piglet {background-image: linear-gradient(to right, #ee9ca7, #ffdde1)}
+#mauve {background-image: linear-gradient(to right, #42275a , #734b6d)}
+#shades_of_grey {background-image: linear-gradient(to right, #bdc3c7, #2c3e50)}
+#a_lost_memory {background-image: linear-gradient(to right, #de6262, #ffb88c)}
+#socialive {background-image: linear-gradient(to right, #06beb6, #48b1bf)}
+#cherry {background-image: linear-gradient(to right, #eb3349, #f45c43)}
+#pinky {background-image: linear-gradient(to right, #dd5e89, #f7bb97)}
+#lush {background-image: linear-gradient(to right, #56ab2f, #a8e063)}
+#kashmir {background-image: linear-gradient(to right, #614385, #516395)}
+#tranquil {background-image: linear-gradient(to right, #eecda3, #ef629f)}
+#pale_wood {background-image: linear-gradient(to right, #eacda3, #d6ae7b)}
+#green_beach {background-image: linear-gradient(to right, #02aab0, #00cdac)}
+#sha_la_la {background-image: linear-gradient(to right, #d66d75, #e29587)}
+#frost {background-image: linear-gradient(to right, #000428, #004e92)}
+#almost {background-image: linear-gradient(to right, #ddd6f3, #faaca8)}
+#virgin_america {background-image: linear-gradient(to right, #7b4397, #dc2430)}
+#endless_river {background-image: linear-gradient(to right, #43cea2, #185a9d)}
+#purple_white {background-image: linear-gradient(to right, #ba5370, #f4e2d8)}
+#bloody_mary {background-image: linear-gradient(to right, #ff512f, #dd2476)}
+#can_you_feel_the_love_tonight {background-image: linear-gradient(to right, #4568dc , #b06ab3)}
+#bourbon {background-image: linear-gradient(to right, #ec6f66, #f3a183)}
+#dusk {background-image: linear-gradient(to right, #ffd89b, #19547b)}
+#relay {background-image: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b)}
+#decent {background-image: linear-gradient(to right, #4ca1af, #c4e0e5)}
+#sweet_morning {background-image: linear-gradient(to right, #ff5f6d, #ffc371)}
+#scooter {background-image: linear-gradient(to right, #36d1dc, #5b86e5)}
+#celestial {background-image: linear-gradient(to right, #c33764, #1d2671)}
+#royal {background-image: linear-gradient(to right, #141e30, #243b55)}
+#ed_sunset_gradient {background-image: linear-gradient(to right, #ff7e5f, #feb47b)}
+#peach {background-image: linear-gradient(to right, #ed4264, #ffedbc)}
+#sea_blue {background-image: linear-gradient(to right, #2b5876, #4e4376)}
+#orange_coral {background-image: linear-gradient(to right, #ff9966, #ff5e62)}
+#aubergine {background-image: linear-gradient(to right, #aa076b, #61045f)}
+
+
+/** FOOTER **/
+
+footer {
+	color: black;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	padding: 20px 0 20px 0;
+	border-top: 1px solid grey;
+}
+
+footer a {color: black}
+
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width: 600px) {
+	.small_screens {font-size: 25px;}
+}
+
