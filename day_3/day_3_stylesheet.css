@@ -1,0 +1,263 @@
+/**
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Playfair Display', serif;
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Lora', serif;
+font-family: 'Alegreya', serif;
+
+font-family: 'Merriweather', serif;
+font-family: 'Lato', sans-serif;
+
+font-family: 'Amatic SC', cursive;
+font-family: 'Josefin Slab', serif;
+
+font-family: 'Cinzel', serif;
+font-family: 'Raleway', sans-serif;
+
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
+ **/
+
+ /** GENERAL SETTINGS **/
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+ body {
+ 	background-image: linear-gradient(to right, #eacda3, #d6ae7b);
+ }
+
+ /** HEADER **/
+
+ header {
+ 	font-family: 'Merriweather', serif;
+ 	color: white;
+ 	text-align: center;
+ 	width: 80%;
+ 	margin-left: 10%;
+ 	border-bottom: 3px solid grey;
+ 	padding: 10px 0 10px 0;
+ }
+
+ /** TAKE AWAY **/
+
+.take_away {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 10px 0 10px 0;
+	background-color: #b38954;
+	box-shadow: 3px 3px 3px black;
+	text-transform: capitalize;
+}
+
+.take_away ul {
+	text-align: center;
+	list-style-position: inside;
+}
+
+/** FONT LIST **/
+
+.font_list {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.fonts_container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	float: left;
+	text-align: center;
+}
+
+.fonts_text {
+	padding: 10% 20px;
+	border: 3px solid grey;
+	border-radius: 15px 15px;
+	background-color: white;
+}
+
+.fonts_name {
+	color: #000428;
+}
+
+
+#open_roboto h1 {font-family: 'Open Sans', sans-serif;}
+#open_roboto p {font-family: 'Roboto', sans-serif;}
+
+#open {font-family: 'Open Sans', sans-serif;}
+#roboto {font-family: 'Roboto', sans-serif;}
+
+#playfair_montserrat h1 {font-family: 'Playfair Display', serif;}
+#playfair_montserrat p {font-family: 'Montserrat', sans-serif;}
+
+#playfair {font-family: 'Playfair Display', serif;}
+#montserrat {font-family: 'Montserrat', sans-serif;}
+
+#lora_alegreya h1 {font-family: 'Lora', serif;}
+#lora_alegreya p {font-family: 'Alegreya', serif;}
+
+#lora {font-family: 'Lora', serif;}
+#alegreya {font-family: 'Alegreya', serif;}
+
+#merriweather_lato h1 {font-family: 'Merriweather', serif;}
+#merriweather_lato p {font-family: 'Lato', sans-serif;}
+
+#merriweather {font-family: 'Merriweather', serif;}
+#lato {font-family: 'Lato', sans-serif;}
+
+#amatic_josefin h1 {font-family: 'Amatic SC', cursive;}
+#amatic_josefin p {font-family: 'Josefin Slab', serif;}
+
+#amatic {font-family: 'Amatic SC', cursive;}
+#josefin {font-family: 'Josefin Slab', serif;}
+
+#cinzel_raleway h1 {font-family: 'Cinzel', serif;}
+#cinzel_raleway p {font-family: 'Raleway', sans-serif;}
+
+#cinzel {font-family: 'Cinzel', serif;}
+#raleway {font-family: 'Raleway', sans-serif;}
+
+
+
+
+
+/** MEDIA QUERIES **/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.fonts_container {
+		width: 80%;
+		height: 370px;
+		margin-left: 10%;
+	}
+
+	.fonts_text {
+		height: 350px;
+	}
+
+	.take_away {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 0.8em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.fonts_container {
+		width: 80%;
+		height: 270px;
+		margin-left: 10%;
+	}
+
+	.fonts_text {
+		height: 250px;
+	}
+
+	.take_away {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 1em;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.fonts_container {
+		width: 40%;
+		height: 330px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.fonts_text {
+		height: 310px;
+	}
+
+	.take_away {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 1em;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.fonts_container {
+		width: 40%;
+		height: 270px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.fonts_text {
+		height: 250px;
+	}
+
+	.take_away {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 1em;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.fonts_container {
+		width: 40%;
+		height: 270px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.fonts_text {
+		height: 250px;
+	}
+
+	.take_away {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 1em;
+	}
+
+}
+
+
+/** FOOTER **/
+
+.separation {clear: both;}
+
+footer {
+	color: black;
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	height: 60px;
+	padding: 20px 0 20px 0;
+	border-top: 3px solid grey;
+}
+
+footer a {
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+
+
+
