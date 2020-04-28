@@ -1,0 +1,255 @@
+/** 
+
+font-family: 'Amatic SC', cursive;
+font-family: 'Josefin Slab', serif;
+
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Amatic SC', cursive;
+}
+
+p, li, a {
+	font-family: 'Josefin Slab', serif;
+}
+
+
+/** HEADER **/
+
+
+header {
+	text-align: center;
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	padding: 3px 0 3px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-size: 0.8em;
+}
+
+header h1 {
+}
+
+
+
+/** SECTIONS SETTINGS **/
+
+.section {
+	text-align: center;
+	font-size: 2em;
+	
+}
+
+.section:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.img {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img img {
+	box-shadow: 5px 5px 5px black;
+}
+
+.text {
+	width: 50%;
+	
+}
+
+
+/** PART 1 **/
+
+.part_1 {
+	margin-top: 38px;
+	color: white;
+	background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+/** PART 2 **/
+
+.part_2 {
+	color: white;
+	background: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+
+/** PART 3 **/
+
+.part_3 {
+	color: white;
+	background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.part_4 {
+	color: white;
+	background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+/** MEDIA QUERIES **/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+	.img {
+		height: 310px;
+		width: 100%;
+		float: left;
+	}
+
+	.img img {
+		height: 200px;
+		width: 200px
+	}
+
+	.text {
+		height: 310px;
+		width: 100%;
+		float: left;
+	}
+
+	header {font-size: 0.7em}
+
+	.part_1 {
+		margin-top: 62px;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.img {
+		height: 300px;
+		width: 100%;
+		float: left;
+	}
+
+	.img img {
+		height: 200px;
+		width: 200px
+	}
+
+	.text {
+		height: 300px;
+		width: 100%;
+		float: left;
+	}
+
+	header {font-size: 0.7em}
+
+	.part_1 {
+		margin-top: 34px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.img {
+		height: 550px;
+		width: 50%;
+		float: left;
+	}
+
+	.img img {
+		height: 200px;
+		width: 200px
+	}
+
+	.text {
+		height: 550px;
+		width: 50%;
+		float: left;
+		padding: 27% 20px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.img {
+		height: 550px;
+		width: 50%;
+		float: left;
+	}
+
+	.img img {
+		height: 200px;
+		width: 200px
+	}
+
+	.text {
+		height: 550px;
+		width: 50%;
+		float: left;
+		padding: 25% 20px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.img {
+		height: 600px;
+		width: 50%;
+		float: left;
+	}
+
+	.img img {
+		height: 200px;
+		width: 200px
+	}
+
+	.text {
+		height: 600px;
+		width: 50%;
+		float: left;
+		padding: 22% 20px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.img {
+		height: 700px;
+		width: 50%;
+		float: left;
+	}
+
+	.img img {
+		height: 300px;
+		width: 300px
+	}
+
+	.text {
+		height: 700px;
+		width: 50%;
+		float: left;
+		padding: 25% 20px;
+	}
+}
+
+
+
+footer {
+	text-align: center;
+	color: white;
+	padding: 3px 0 3px 0;
+	width: 100%;
+	font-size: 0.8em;
+	background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+footer a {text-decoration: none; color: white;}
+
+
+
+
