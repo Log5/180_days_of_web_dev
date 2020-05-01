@@ -1,0 +1,267 @@
+/**
+font-family: 'Indie Flower', cursive;
+font-family: 'Josefin Slab', serif;
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {font-family: 'Indie Flower', cursive;}
+p, a, li {font-family: 'Indie Flower', cursive;}
+
+header {
+	text-align: center;
+	padding: 40px 0 40px 0;
+	color: white;
+}
+
+body {
+	background-image: linear-gradient(to bottom, #2193b0, #6dd5ed);
+	background-repeat: no-repeat;
+}
+
+/** HOMEPAGE **/
+
+.homepage_text {
+	width: 50%;
+	height: 700px;
+	float: left;
+	color: white;
+	padding: 10% 40px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.homepage_img {
+	width: 50%;
+	height: 700px;
+	float: left;
+}
+
+#homepage_portrait {
+	width: 600px;
+	height: 600px;
+}
+
+/** COMPLIMENTS PAGE **/
+
+.compliments_text {
+	width: 50%;
+	height: 700px;
+	float: left;
+	color: white;
+	padding: 10% 40px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.compliments_img {
+	width: 50%;
+	height: 700px;
+	float: left;
+}
+
+#compliments_page_portrait  {
+	width: 600px;
+	height: 600px;
+}
+
+
+/** NOTIFICATION PAGE **/
+
+.notification_text {
+	width: 50%;
+	height: 700px;
+	float: left;
+	color: white;
+	padding: 10% 40px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.notification_img {
+	width: 50%;
+	height: 700px;
+	float: left;
+}
+
+#notification_portrait  {
+	width: 600px;
+	height: 600px;
+}
+
+/** FEATURES **/
+
+.features_title {
+	text-align: center;
+	margin-top: 200px;
+	color: white;
+	font-size: 2em;
+}
+
+.features_list_left {
+	color: white;
+	font-size: 2em;
+	text-align: left;
+	width: 50%;
+	height: 500px;
+	float: left;
+	padding: 40px 90px;
+}
+
+.features_list_right {
+	color: white;
+	font-size: 2em;
+	text-align: left;
+	width: 50%;
+	height: 500px;
+	float: left;
+	padding: 40px 90px;
+}
+
+/** FADE IN **/
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/** FOOTER **/
+
+footer {
+	text-align: center;
+	color: white;
+	padding: 3px 0 3px 0;
+	width: 100%;
+	font-size: 0.8em;
+}
+
+footer a {text-decoration: none; color: white;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.homepage_text {font-size: 1.2em; height: 400px;}
+	.homepage_img {height: 400px;}
+	#homepage_portrait {
+		width: 300px;
+		height: 300px;
+	}
+
+	.notification_text {font-size: 1.2em; height: 400px;}
+	.notification_img {height: 400px;}
+	#notification_portrait {
+		width: 300px;
+		height: 300px;
+	}
+
+	.compliments_text {font-size: 1.2em; height: 400px;}
+	.compliments_img {height: 400px;}
+	#compliments_page_portrait {
+		width: 300px;
+		height: 300px;
+	}
+
+	.features_list_left {font-size: 1.2em; padding: 40px 40px;}
+	.features_list_right {font-size: 1.2em; padding: 40px 20px;}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	.homepage_text {font-size: 1.5em}
+	#homepage_portrait {
+		width: 400px;
+		height: 400px;
+	}
+
+	.notification_text {font-size: 1.5em}
+	#notification_portrait {
+		width: 400px;
+		height: 400px;
+	}
+
+	.compliments_text {font-size: 1.5em}
+	#compliments_page_portrait {
+		width: 400px;
+		height: 400px;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	.homepage_text {font-size: 1.5em}
+	#homepage_portrait {
+		width: 400px;
+		height: 400px;
+	}
+
+	.notification_text {font-size: 1.5em}
+	#notification_portrait {
+		width: 400px;
+		height: 400px;
+	}
+
+	.compliments_text {font-size: 1.5em}
+	#compliments_page_portrait {
+		width: 400px;
+		height: 400px;
+	}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	#homepage_portrait {
+		width: 500px;
+		height: 500px;
+	}
+
+	#notification_portrait {
+		width: 500px;
+		height: 500px;
+	}
+
+	#compliments_page_portrait {
+		width: 500px;
+		height: 500px;
+	}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	#homepage_portrait {
+		width: 600px;
+		height: 600px;
+	}
+
+	#notification_portrait {
+		width: 600px;
+		height: 600px;
+	}
+
+	#compliments_page_portrait {
+		width: 600px;
+		height: 600px;
+	}
+
+}
+
+
+
