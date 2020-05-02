@@ -1,0 +1,194 @@
+/**
+font-family: 'Press Start 2P', cursive;
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+h1, h2, h3, h4 {
+	color: green;
+	font-family: 'Press Start 2P', cursive;
+}
+
+
+
+/** HEADER **/
+
+header {
+	text-align: center;
+	padding: 20px;
+}
+
+
+/** CENTRE **/
+
+#text {
+	color: green;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	border: 1px solid white;
+	box-shadow: 1px 1px 5px white;
+	line-height: 1.7;
+	overflow: auto;
+}
+
+#input_box {
+	margin: 0 auto;
+}
+
+#input {
+	color: green;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	width: 100%;
+}
+
+
+#buttonBox {
+	color: green;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	padding: 5px;
+}
+
+button{
+  margin-left: 10px;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 15px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#text {
+		padding: 40px;
+		width: 85%;
+		height: 300px;
+		margin: 20px auto;
+		font-size: 0.8em;
+	}
+
+	#input_box {
+		width: 85%;
+	}
+
+	button {
+		height: 45px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#text {
+		padding: 40px;
+		width: 75%;
+		height: 300px;
+		margin: 30px auto;
+	}
+
+	#input_box {
+		width: 75%;
+	}
+
+	button {
+		height: 60px;
+		font-size: 0.8em;
+		overflow: auto;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#text {
+		padding: 30px;
+		width: 65%;
+		height: 300px;
+		margin: 40px auto;
+	}
+
+	#input_box {
+		width: 65%;
+	}
+
+	button {
+		height: 60px;
+		font-size: 0.8em;
+		overflow: auto;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#text {
+		padding: 40px;
+		width: 60%;
+		height: 300px;
+		margin: 45px auto;
+	}
+
+	#input_box {
+		width: 60%;
+	}
+
+	button {
+		height: 35px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#text {
+		padding: 40px;
+		width: 50%;
+		height: 300px;
+		margin: 50px auto;
+	}
+
+	#input_box {
+		width: 50%;
+	}
+
+	button {
+		height: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
