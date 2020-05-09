@@ -8,9 +8,9 @@ function calculateInput() {
 		let celsius = inputValue;
 		let fahrenheit = Math.round(inputValue * (9/5) + 32);
 		let kelvin = inputValue * 1 + 273.15;
-		let celius_text = document.getElementById("celsius_text").innerHTML = celsius + " degrees";
-		let fahrenheit_text = document.getElementById("fahrenheit_text").innerHTML = fahrenheit + " degrees";
-		let kelvin_text = document.getElementById("kelvin_text").innerHTML = kelvin + " degrees";
+		let celius_text = document.getElementById("celsius_text").innerHTML = celsius + "\xB0";
+		let fahrenheit_text = document.getElementById("fahrenheit_text").innerHTML = fahrenheit + "\xB0";
+		let kelvin_text = document.getElementById("kelvin_text").innerHTML = kelvin + "\xB0";
 		if (celsius > 25) {
 			document.body.style.backgroundColor = "#B9121B";
 		} else if (celsius > 10) {
@@ -23,9 +23,9 @@ function calculateInput() {
 		let celsius = Math.round((inputValue - 32) * (5/9));
 		let fahrenheit = inputValue;
 		let kelvin = Math.round((inputValue - 32) * (5/9) + 273,15);
-		let celius_text = document.getElementById("celsius_text").innerHTML = celsius + " degrees";
-		let fahrenheit_text = document.getElementById("fahrenheit_text").innerHTML = fahrenheit + " degrees";
-		let kelvin_text = document.getElementById("kelvin_text").innerHTML = kelvin + " degrees";
+		let celius_text = document.getElementById("celsius_text").innerHTML = celsius + "\xB0";
+		let fahrenheit_text = document.getElementById("fahrenheit_text").innerHTML = fahrenheit + "\xB0";
+		let kelvin_text = document.getElementById("kelvin_text").innerHTML = kelvin + "\xB0";
 		if (celsius > 25) {
 			document.body.style.backgroundColor = "#B9121B";
 		} else if (celsius > 10) {
@@ -37,9 +37,9 @@ function calculateInput() {
 		let celsius = Math.round(inputValue - 273.15);
 		let fahrenheit = Math.round((inputValue - 273.15) * (9/5) + 32);
 		let kelvin = inputValue;
-		let celius_text = document.getElementById("celsius_text").innerHTML = celsius + " degrees";
-		let fahrenheit_text = document.getElementById("fahrenheit_text").innerHTML = fahrenheit + " degrees";
-		let kelvin_text = document.getElementById("kelvin_text").innerHTML = kelvin + " degrees";
+		let celius_text = document.getElementById("celsius_text").innerHTML = celsius + "\xB0";
+		let fahrenheit_text = document.getElementById("fahrenheit_text").innerHTML = fahrenheit + "\xB0";
+		let kelvin_text = document.getElementById("kelvin_text").innerHTML = kelvin + "\xB0";
 		if (celsius > 25) {
 			document.body.style.backgroundColor = "#B9121B";
 		} else if (celsius > 10) {
