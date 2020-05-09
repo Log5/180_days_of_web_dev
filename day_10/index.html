@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Degrees converter</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<h1>Degrees converter</h1>
+	</header>
+
+
+	<!-- SECTION WITH CONVERTER -->
+		<section class="container">
+
+			<div class="container_box">
+				
+				<!-- INPUT DEGREES -->
+				<input type="text" placeholder="Insert degrees" id="userInput">
+
+				<!-- SELECT OPTION -->
+				<select id="selected_degrees">
+					<option value="celsius">Celsius</option>
+					<option value="fahrenheit">Fahrenheit</option>
+					<option value="kelvin">Kelvin</option>
+				</select>
+
+				<!-- CALCULATE BUTTON -->
+				<button type="button" onclick="calculateInput()" id="button">Calculate</button>
+
+				<!-- RETURNED VALUES -->
+				<br/>
+				<br/>
+				<div class="flex_box">
+					<p class="flex_item" id="celsius_p">Celsius: <span class="flex_item" id="celsius_text"></span></p>
+					<p class="flex_item" id="fahrenheit_p">Fahrenheit: <span class="flex_item" id="fahrenheit_text"></span></p>
+					<p class="flex_item" id="kelvin_p">Kelvin: <span class="flex_item" id="kelvin_text"></span></p>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<a href="../index.html"><h2>Home</h2></a>
+		</footer>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
