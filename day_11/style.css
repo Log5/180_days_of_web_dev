@@ -1,0 +1,123 @@
+/** 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(to bottom, #eb3349, #f45c43);
+	color: white;
+}
+
+h1, h2, h3, h4 {font-family: 'Open Sans', sans-serif;}
+p, a, li, span, div, input {font-family: 'Montserrat', sans-serif;}
+
+
+/** HEADER **/
+
+header {
+	text-align: center;
+	padding: 15px;
+}
+
+
+/** CORE TEXT **/
+
+#core_text_container {
+	padding: 30px;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+#input_box{
+	width: 50px;
+	text-align: center;
+	font-size: 0.9em;
+	border: 1px solid grey;
+}
+
+/** CALCULATE BUTTON **/
+
+#button_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+#calculate_button {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
+
+/** RESULT MESSAGE **/
+
+#result_container {
+	padding: 20px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/** RESULT IMAGE **/
+
+#image_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.image {box-shadow: 1px 1px 3px black}
+#image_young {display: none;}
+#image_ado {display: none;}
+#image_old {display: none;}
+
+
+/** FOOTER **/
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a {
+	font-size: 0.3em;
+	text-decoration: none;
+	color: white;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 11 - Project Dog Years</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale =1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+
+	<header>
+		<h1>Calculate your dog's age!</h1>
+	</header>
+
+	<!-- CORE TEXT -->
+
+	<div id="core_text_container">
+		<p>My dog is <input type="number" placeholder="..." min="1" id="input_box" required="required"> years old<br/> so its human age is<br/> <p id="age_result">...</p> years old</p>
+	</div>
+
+	<!-- CALCULATE BUTTON -->
+	<div id="button_container">
+		<button id="calculate_button" onclick="calculateAge()">Calculate</button>
+	</div>
+
+	<!-- RESULT MESSAGE -->
+	<div id="result_container">
+		<p id="result_message"></p>
+	</div>
+
+	<!-- RESULT IMAGE -->
+	<div id="image_container">
+		<img src="images/young_puppy.jpg" id="image_young" class="image" width="250px" height="180px">
+		<img src="images/ado_dog.jpg" id="image_ado" class="image" width="250px" height="180px">
+		<img src="images/old_dog.jpg" id="image_old" class="image" width="250px" height="180px">
+	</div>
+
+	<!-- FOOTER -->
+
+	<footer>
+		<a href="../index.html">Home</a>
+	</footer>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
