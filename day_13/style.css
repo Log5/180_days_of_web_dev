@@ -1,0 +1,143 @@
+/**
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Balsamiq Sans', cursive;
+
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {font-family: 'Roboto', sans-serif;}
+p, li, a, span, div {font-family: 'Balsamiq Sans', cursive;}
+
+body {
+	background-color: #15133c;
+	color: white;
+	height: 100vh;
+}
+
+/** HEADER **/
+
+header {
+	text-align: center;
+	padding: 20px 10px;
+	border-bottom: 2px solid white;
+	box-shadow: 2px 2px 3px #d80b04;
+}
+
+
+/** SCORE **/
+
+#score_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 10px;
+}
+
+#score_text {font-family: 'Roboto', sans-serif;}
+
+/** MESSAGE **/
+
+#message_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px 10px 10px;
+	font-size: 0.7em;
+	color: #d80b04;
+}
+
+/** COMBAT INTERFACE **/
+
+.combat_interface {
+	display: flex;
+	text-align: center;
+}
+
+.width50 {
+	width: 50%;
+	padding-top: 15px;
+}
+
+.underline {text-decoration: underline;}
+
+#separator {border-right: 2px solid #d80b04;}
+
+
+#comp_rock {display: none;}
+#comp_paper {display: none;}
+#comp_scissors {display: none;}
+#comp_lizard {display: none;}
+#comp_spock {display: none;}
+#user_rock {display: none;}
+#user_paper {display: none;}
+#user_scissors {display: none;}
+#user_lizard {display: none;}
+#user_spock {display: none;}
+
+
+#comp_to_hide {display: block;}
+#user_to_hide {display: block;}
+
+.arrow {
+	padding: 5px;
+	font-size: 1.5em;
+	color: #d80b04;
+}
+
+/** COMBAT BUTTON **/
+
+#button_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 10px 5px 10px;
+}
+
+#combat_button {
+	color: #d80b04;
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid #d80b04;
+}
+
+/** IMAGE **/
+
+#image_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/** FOOTER **/
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+

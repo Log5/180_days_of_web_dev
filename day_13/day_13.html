@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 13 - Project Rock, Paper, Scissors</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a20c003859.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<h1>
+			<i class="far fa-hand-rock"></i>
+			<i class="far fa-hand-paper"></i>
+			<i class="far fa-hand-scissors"></i>
+			<i class="far fa-hand-lizard"></i>
+			<i class="far fa-hand-spock"></i>
+		</h1>
+		<h6>ROCK  |  PAPER  |  SCISSORS  |  LIZARD  |  SPOCK</h3>
+	</header>
+
+	<!-- SCORE -->
+	<div id="score_container">
+		<h2>SCORE: <span id="computer_score_text">0</span></h2>
+		<h2>SCORE: <span id="user_score_text">0</span></h2>
+	</div>
+
+		<!-- MESSAGE -->
+	<div id="message_container">
+		<h2 id="message_text"></h2>
+	</div>
+
+	<!-- COMBAT INTERFACE -->
+	<div class="combat_interface">
+		<h2 class="width50 underline">Computer</h2>
+		<h2 class="width50 underline">
+			<button onclick="changeToolLeft()"><i class="fas fa-arrow-left arrow"></i></button>
+			You
+			<button onclick="changeToolRight()"><i class="fas fa-arrow-right arrow"></i></button>
+		</h2>
+	</div>
+
+	<div class="combat_interface">
+		<h2 class="width50" id="separator">
+			<span id="comp_to_hide"><i class="fas fa-user-ninja"></i></span>
+			<span id="comp_rock"><i class="far fa-hand-rock"></i></span>
+			<span id="comp_paper"><i class="far fa-hand-paper"></i></span>
+			<span id="comp_scissors"><i class="far fa-hand-scissors"></i></span>
+			<span id="comp_lizard"><i class="far fa-hand-lizard"></i></span>
+			<span id="comp_spock"><i class="far fa-hand-spock"></i></span>
+		</h2>
+		<h2 class="width50">
+			<span id="user_to_hide"><i class="fas fa-pizza-slice"></i></span>
+			<span id="user_rock"><i class="far fa-hand-rock"></i></span>
+			<span id="user_paper"><i class="far fa-hand-paper"></i></span>
+			<span id="user_scissors"><i class="far fa-hand-scissors"></i></span>
+			<span id="user_lizard"><i class="far fa-hand-lizard"></i></span>
+			<span id="user_spock"><i class="far fa-hand-spock"></i></span>
+		</h2>
+	</div>
+
+	<!-- COMBAT BUTTON -->
+	<div id="button_container">
+		<button type="button" onclick="combat()" id="combat_button">Combat!</button>
+	</div>
+
+
+	<!-- IMAGE -->
+	<div id="image_container">
+		<img src="images/explanation.png" width="250px" height="250px">
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer>
+		<a href="../index.html">Home</a>
+	</footer>
+
+<script type="text/javascript" src="main.js"></script>	
+</body>
+</html>
