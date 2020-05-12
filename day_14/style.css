@@ -1,0 +1,201 @@
+/**
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+red color: #c7332c;
+
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: #ffd8a6;
+	position: relative;
+}
+
+h1, h2, h3, h4 {font-family: 'Roboto', sans-serif; opacity: 0.8;}
+
+p, li, a, span, div, input {font-family: 'Open Sans', sans-serif;}
+
+/** HEADER **/
+
+header {
+	text-align: center;
+	padding: 10px;
+}
+
+#main_title {
+	text-decoration: underline;
+	text-decoration-color: #c7332c;
+}
+
+/** CHOOSE A NAME **/
+
+#choose_name_box {
+	display: none;
+	text-align: center;
+	padding: 20px 10px;
+	margin-top: 50%;
+}
+
+#input_choose_name {
+	text-align: center;
+	width: 45%;
+	height: 30px;
+	font-size: 1.2em;
+	margin: 20px 0 15px 0; 
+}
+
+#submit_choose_name {
+	display: block;
+	margin: 10px auto;
+	border: 2px solid #c7332c;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-color: white;
+	font-size: 1em;
+}
+
+
+/** FOOTER **/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer a {
+	color: white;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+
+
+/** WELCOME MESSAGE **/
+
+#welcome_message_box {
+	display: none; 
+	text-align: center;
+	padding: 30px;
+	margin: 0 auto;
+	margin-top: 20%;
+}
+
+#userName {font-family: 'Roboto', sans-serif;}
+
+#skill_box {
+	border: 1px solid black;
+	margin: 20px auto;
+	width: 90%;
+	background-color: rgb(240,240,240);
+	padding: 5px;
+}
+
+#skill_box table {
+	width: 100%;
+}
+
+#skill_box td {
+	text-align: left;
+	font-weight: bolder;
+}
+
+.long_row {width: 70%}
+.small_row {width: 15%;}
+.increase_skill_button {
+	font-size: 1.5em;
+	color: #c7332c;
+}
+
+#start_looking_for_jobs_button {
+	border: 2px solid #c7332c;
+	background-color: white;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+/** DASHBOARD **/
+
+#dashboard {
+	display: block;
+	border: 1px solid #c7332c;
+	background-color: rgb(240,240,240);
+	width: 90%;
+	margin: 20px auto;
+	box-shadow: -1px 1px 1px black;
+}
+
+#db_top_row, #db_mid_row {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+#db_skill_table {width: 100%; margin-top: 5px;}
+
+.db_skill_name {
+	padding-left: 10px;
+	width: 50%;
+}
+
+.db_small_row {width: 8%;}
+
+#db_leadership_button {display: none;}
+#db_communication_button {display: none;}
+#db_organisation_button {display: none;}
+#db_teamBuilding_button {display: none;}
+
+#db_fame {text-align: right; padding-right: 5px;}
+#dashboard_exp {text-align: right; padding-right: 5px;}
+
+
+/** JOB POSTING PAGE **/
+
+#job_posting_page {
+	display: block;
+	margin-top: 30px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#job_posting_page h2 {text-align: center;}
+
+#job_listing {
+	overflow: scroll;
+	width: 100%;
+	height: 300px;
+	margin-top: 30px;
+	border: 1px solid #c7332c;
+	background-color: rgb(240,240,240);
+	box-shadow: -1px 1px 1px black;
+}
+
+.job_post {
+	border: 2px solid black;
+	background-color: white;
+	width: 80%;
+	margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
