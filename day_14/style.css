@@ -187,6 +187,31 @@ footer a {
 	background-color: white;
 	width: 80%;
 	margin: 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px black;
+}
+
+.job_post li {
+	font-size: 0.9em;
+	margin-left: 20px;
+	list-style-position: outside;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.job_post p {font-size: 0.8em; text-align: justify;}
+
+.apply_button_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.apply_button {
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 10px;
 }
 
 
