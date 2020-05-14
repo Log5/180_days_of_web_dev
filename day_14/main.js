@@ -9,11 +9,6 @@ let fame = 0;
 
 let skillPointsToAllocate = 5;
 
-//let leadershipSkill = 0;
-//let communicationSkill = 0;
-//let organisationSkill = 0;
-//let teamBuildingSkill = 0; 
-
 let skillObject = {
 	leadership: 0,
 	communication: 0,
@@ -109,7 +104,7 @@ const increaseTeamBuilding = () => {
 	// If remaining skill points to allocate, run the function (increase skill, decrease total points)
 	skillObject["team building"] += 1;
 	skillPointsToAllocate--;
-	document.getElementById("teamBuildingSkill").innerHTML = skillObject.organisation;
+	document.getElementById("teamBuildingSkill").innerHTML = skillObject["team building"];
 	document.getElementById("skill_points_to_allocate").innerHTML = skillPointsToAllocate;
 };
 
@@ -207,6 +202,9 @@ const applyJob = (jobNum) => {
 	currentDay++
 	document.getElementById("db_day").innerHTML = currentDay;
 
+	// SHOWING TASK PAGE
+	document.getElementById("tasks_page").style.display = "block"
+
 };
 
 
@@ -261,13 +259,26 @@ const increaseDashboardSkill = (skill_name) => {
 
 	switch (skill_name) {
 		case (leadershipSkill):
-			console.log("Switch execuded")
 			skillObject.leadership += 1;
 			document.getElementById("db_leadership").innerHTML = skillObject.leadership;
 			return hideButton();
 			break;
+		case (communicationSkill):
+			skillObject.communication += 1;
+			document.getElementById("db_communication").innerHTML = skillObject.communication;
+			return hideButton();
+			break;
+		case (organisationSkill):
+			skillObject.organisation += 1;
+			document.getElementById("db_organisation").innerHTML = skillObject.organisation;
+			return hideButton();
+			break;
+		case (teamBuildingSkill):
+			skillObject["team building"] += 1;
+			document.getElementById("db_teamBuilding").innerHTML = skillObject["team building"];
+			return hideButton();
+			break;
 		default:
-			console.log("Switch not executed")
 	};
 
 };

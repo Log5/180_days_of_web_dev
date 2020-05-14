@@ -40,7 +40,7 @@ header {
 /** CHOOSE A NAME **/
 
 #choose_name_box {
-	display: none;
+	display: block;
 	text-align: center;
 	padding: 20px 10px;
 	margin-top: 50%;
@@ -129,7 +129,7 @@ footer a {
 /** DASHBOARD **/
 
 #dashboard {
-	display: block;
+	display: none;
 	border: 1px solid #c7332c;
 	background-color: rgb(240,240,240);
 	width: 90%;
@@ -160,7 +160,7 @@ footer a {
 #db_teamBuilding_button {display: none;}
 
 #db_fame {text-align: right; padding-right: 5px;}
-#dashboard_exp {text-align: right; padding-right: 5px;}
+#db_exp {text-align: right; padding-right: 5px;}
 
 
 /** JOB POSTING PAGE **/
@@ -221,7 +221,7 @@ footer a {
 /** TASKS PAGE **/
 
 #tasks_page {
-	display: block;
+	display: none;
 	margin-top: 30px;
 	width: 90%;
 	margin: 0 auto;
