@@ -24,6 +24,7 @@
 	<!-- FOOTER -->
 	<footer>
 		<a href="../index.html"><h4>Home</h4></a>
+		<button onclick="test()">Test</button>
 	</footer>
 
 
@@ -82,14 +83,14 @@
 			<tr>
 				<td class="db_skill_name">Leadership</td>
 				<td id="db_leadership" class="db_small_row">0</td>
-				<td><button class="increase_skill_button db_small_row" onclick="increaseDashboardxxx()" id="db_leadership_button">+</button></td>
-				<td id="db_fame">Fame: 000</td>
+				<td><button class="increase_skill_button db_small_row" onclick="increaseDashboardSkill(leadershipSkill)" id="db_leadership_button">+</button></td>
+				<td class="right_align">Fame: <span id="db_fame">000</span></td>
 			</tr>
 			<tr>
 				<td class="db_skill_name">Communication</td>
 				<td id="db_communication" class="db_small_row">0</td>
 				<td><button class="increase_skill_button db_small_row" onclick="increaseDashboardxxx()" id="db_communication_button">+</button></td>
-				<td id="dashboard_exp">Exp: 00,000</td>
+				<td class="right_align">Exp: <span id="db_exp">000</span></td>
 			</tr>
 			<tr>
 				<td class="db_skill_name">Organisation</td>
@@ -113,9 +114,9 @@
 		<div id="job_listing">
 
 			<div class="job_post" id="job_post_1">
-				<h4>Ohoro Design</h4>
-				<h5>Customer Experience Manager</h5>
-				<h5>$50,000/year</h5>
+				<h3 id="job_1_company">Ohoro Design</h3>
+				<h4 id="job_1_position">Customer Exp. Manager</h4>
+				<h4 id="job_1_salary">$50,000/year</h4>
 				<br/>
 				<h5>Company's description</h5>
 				<p>Ohoro Design is a NY-based company designing and building sustanaible furniture.</p>
@@ -126,18 +127,24 @@
 					<li>mentoring, training, and coaching direct reports</li>
 					<li>driving improvement in all efficiency/cost related KPIs</li>
 				</ul>
+				<br/>
+				<h5>Requirements</h5>
+				<ul>
+					<li>Fame: 0</li>
+					<li><span id="job_1_required_skill">Organisation</span>: <span id="job_1_min_skill">1</li>
+				</ul>
 				<h5>Other</h5>
-				<p>Opportunity to increase your productivity.</p>
+				<p>Opportunity to increase your organisation skill.</p>
 				<br/>
 				<div class="apply_button_container">
-					<button class="apply_button" onclick="applyJob()">Apply</button>
+					<button class="apply_button" onclick="applyJob(1)">Apply</button>
 				</div>
 			</div>
 
-			<div class="job_post" id="job_post_1">
-				<h4>Wall Smart</h4>
-				<h5>Assistant Store Manager</h5>
-				<h5>$50,000/year</h5>
+			<div class="job_post" id="job_post_2">
+				<h3 id="job_2_company">Wall Smart</h3>
+				<h4 id="job_2_position">Jr. Store Manager</h4>
+				<h4 id="job_2_salary">$50,000/year</h4>
 				<br/>
 				<h5>Company's description</h5>
 				<p>Wall Smart is multinational retail corporation that operates a chain of hypermarkets.</p>
@@ -148,18 +155,24 @@
 					<li>monitoring the competitive environment</li>
 					<li>providing product feedback and recommandation to the management</li>
 				</ul>
+				<br/>
+				<h5>Requirements</h5>
+				<ul>
+					<li>Fame: 0</li>
+					<li><span id="job_2_required_skill">Leadership</span>: <span id="job_2_min_skill">1</li>
+				</ul>
 				<h5>Other</h5>
-				<p>Opportunity to increase your leadership.</p>
+				<p>Opportunity to increase your leadership skill.</p>
 				<br/>
 				<div class="apply_button_container">
-					<button class="apply_button" onclick="applyJob()">Apply</button>
+					<button class="apply_button" onclick="applyJob(2)">Apply</button>
 				</div>
 			</div>
 
-			<div class="job_post" id="job_post_1">
-				<h4>Red Montain</h4>
-				<h5>Junior Branch Manager</h5>
-				<h5>$50,000/year</h5>
+			<div class="job_post" id="job_post_3">
+				<h3 id="job_3_company">Red Montain</h3>
+				<h4 id="job_3_position">Jr. Branch Manager</h4>
+				<h4 id="job_3_salary">$50,000/year</h4>
 				<br/>
 				<h5>Company's description</h5>
 				<p>Red Montain is a family-owned company manufacturing electric bikes.</p>
@@ -170,17 +183,97 @@
 					<li>promoting our services and capabilities at industry events</li>
 					<li>increasing sales through customer relationships</li>
 				</ul>
+				<br/>
+				<h5>Requirements</h5>
+				<ul>
+					<li>Fame: 0</li>
+					<li><span id="job_3_required_skill">Communication</span>: <span id="job_3_min_skill">1</li>
+				</ul>
 				<h5>Other</h5>
-				<p>Opportunity to increase your communication.</p>
+				<p>Opportunity to increase your communication skill.</p>
 				<br/>
 				<div class="apply_button_container">
-					<button class="apply_button" onclick="applyJob()">Apply</button>
+					<button class="apply_button" onclick="applyJob(3)">Apply</button>
 				</div>
 			</div>
 
 		</div>
 
 	</div>
+
+	<!-- TASKs PAGE -->
+
+	<div id="tasks_page">
+		
+		<h2>What will you do today?</h2>
+
+		<div id="tasks_list">
+			
+			<div class="task_box" id="task_1">
+				<button onclick="doTask(90,50,10)">
+					<h3>Follow up on day-to-day operations</h3>
+					<table>
+						<tr>
+							<td>Success rate:</td>
+							<td><span class="primary_font" id="task_1_success">90</span>%</td>
+						</tr>
+						<tr>
+							<td>Experience:</td>
+							<td>+<spa class="primary_font"n id="task_1_exp">50</span></td>
+						</tr>
+						<tr>
+							<td>Fame:</td>
+							<td>+<spa class="primary_font"n id="task_1_fame">10</span></td>
+						</tr>
+					</table>
+				</button>
+			</div>
+
+			<div class="task_box" id="task_2">
+				<button onclick="doTask(80,100,20)">
+					<h3>Coach your team on new techniques</h3>
+					<table>
+						<tr>
+							<td>Success rate:</td>
+							<td><span class="primary_font" id="task_2_success">80</span>%</td>
+						</tr>
+						<tr>
+							<td>Experience:</td>
+							<td>+<spa class="primary_font"n id="task_2_exp">100</span></td>
+						</tr>
+						<tr>
+							<td>Fame:</td>
+							<td>+<spa class="primary_font"n id="task_2_fame">20</span></td>
+						</tr>
+					</table>
+				</button>
+			</div>
+
+			<div class="task_box" id="task_3">
+				<button onclick="doTask(60,200,30)">
+					<h3>Work on a new product</h3>
+					<table>
+						<tr>
+							<td>Success rate:</td>
+							<td><span class="primary_font" id="task_3_success">60</span>%</td>
+						</tr>
+						<tr>
+							<td>Experience:</td>
+							<td>+<spa class="primary_font"n id="task_3_exp">200</span></td>
+						</tr>
+						<tr>
+							<td>Fame:</td>
+							<td>+<spa class="primary_font"n id="task_3_fame">30</span></td>
+						</tr>
+					</table>
+				</button>
+			</div>
+
+
+		</div>
+
+	</div>
+
 
 
 <script type="text/javascript" src="main.js"></script>
