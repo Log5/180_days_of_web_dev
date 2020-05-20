@@ -1,0 +1,136 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {font-family: Helvetica;}
+p, li, a, span, div {font-family: Arial;}
+
+.relative {position: relative;}
+.text-align {text-align: center; padding: 20px;}
+
+/** BANNER **/
+
+#banner {
+	height: 100vh;
+	background-color: rgba(150,150,150,0.8);
+	color: white;
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr;
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+}
+
+
+#banner_top h2 {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#banner_mid h1 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3rem;
+}
+
+
+#banner_bottom h2 {
+	bottom: 10px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	word-spacing: 10px;
+	font-size: 1em;
+}
+
+/** EXPLANATION **/
+
+#explanation{
+	background-color: rgb(255, 88, 81);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.expl_card {
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+
+#what {background-color: rgba(255, 88, 81,0.8)}
+#where {background-color: rgba(168, 193, 0,0.8)}
+#why {background-color: rgba(242, 195, 110,0.8)}
+
+/** LEARN. REST. ENJOY. **/
+
+#LRE {
+	background-color: rgb(168, 193, 0);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.LRE_card {
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+/** FOOTER **/
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: rgba(200,200,200,0.8);
+	text-align: center;
+	align-items: center;
+	padding: 20px;
+	font-style: italic;
+	font-size: 0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -57,43 +57,29 @@ nav:after {clear: both;}
 	align-items: center;
 	letter-spacing: 2px;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 /** WEB PAGES LIST **/
 
 .web_pages_list {margin-left: 20px;}
-.web_pages_list h1 {margin-bottom: 30px;}
+.text_align {margin-bottom: 30px; text-align: center;}
+
+.today_webpage {
+	border: 1px solid rgb(200,200,200);
+	border-radius: 15px;
+	padding: 20px;
+	text-align: center;
+	margin: 30px auto;
+	width: 50%;
+	color: white;
+	background-color: rgb(254, 111, 98);
+}
+
+.today_webpage h5, .today_webpage h3{padding-bottom: 5px;}
+
 .web_pages_list li {margin-bottom: 5px;}
 
-/** MY CREATIONS 
-
-#projects {
-	text-align: center;
-	margin-top: 60px;
-}
-
-.flex_container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
-	width: 90%;
-	margin: 20px auto;
-}
-
-.flex_box {
-	width: 45%;
-	margin: 10px 10px;
-	box-shadow: 1px 1px 3px black;
-	border-radius: 0 0 8px 8px;
-}
-
-.flex_text {padding: 10px; text-align: left;}
-
-.flex_img img {width: 100%; height: 100%;}
-
-**/
 
 /** FOOTER **/
 
@@ -115,56 +101,27 @@ footer p, footer li {padding: 10px}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.flex_box {
-		width: 90%;
-	}
-
-	.flex_img {
-		height: 200px;
-	}
+	.today_webpage {width: 90%;}
+	.text_banner {font-size: 0.9em;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-	.flex_box {
-		width: 90%;
-	}
-
-	.flex_img {
-		height: 200px;
-	}
+	.today_webpage {width: 80%;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	.flex_box {
-		width: 45%;
-	}
 
-	.flex_img {
-		height: 200px;
-	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	.flex_box {
-		width: 45%;
-	}
 
-	.flex_img {
-		height: 200px;
-	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	.flex_box {
-		width: 45%;
-	}
 
-	.flex_img {
-		height: 180px;
-	}
 }
 
