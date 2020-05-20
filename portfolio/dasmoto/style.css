@@ -1,0 +1,83 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p {font-family: Helvetica;}
+
+.margin {
+	margin: 0 10px;
+}
+
+.flex_container {
+	display: flex;
+	align-items: flex-end;
+}
+
+.price {
+	color: blue;
+	font-weight: bold;
+}
+
+.section_banner {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.section_img {margin: 20px 0;}
+
+.section_text {
+	font-weight: lighter;
+	margin: 20px 0 20px 10px ;
+}
+
+/** BANNER **/
+
+#banner {
+	background-image: url(img/background.jpeg);
+	font-size: 50px;
+	color: khaki;
+	text-align: center;
+	margin: 50px 10px;
+	font-weight: bold;
+}
+
+/** BRUSHES **/
+
+#brushes_banner {background-color: mediumspringgreen;}
+
+/** FRAMES **/
+
+#frames_banner {background-color: lightcoral;}
+
+/** PAINT **/
+
+#paint_banner {background-color: skyblue}
+
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 600px) {
+	#banner {font-size: 24px;}
+
+	.flex_container {flex-wrap: wrap;}
+	.section_img {margin: 20px auto;}
+	.section_text {text-align: center;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

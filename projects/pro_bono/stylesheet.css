@@ -1,0 +1,176 @@
+/**
+green: #40A497 (header);
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+color blue goal 11: #BCC7C6;
+color orange goal 14: #f99f2a;
+
+**/
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+	background-color: #024d77;
+	width: 98.4%;
+	padding: 1px;
+	color: white;
+	height: 80px;
+	position: fixed;
+	margin-top: -15px;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	float: left;
+	display: inline-block;	
+}
+
+#about {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+
+#login {
+	position: absolute;
+	top: 20px;
+	right: 130px;
+}
+
+#signup {
+	position: absolute;
+	top: 20px;
+	right: 210px;
+}
+
+#banner_text {
+	position: absolute;
+	top: 180px;
+	left: 400px;
+	font-size: 40px;
+	color: #E70739;
+}
+
+.banner {
+	margin-bottom: 20px;
+}
+
+.project {
+	width: 90%;
+	height: 160px;
+	border: solid 1px black;
+	margin-left: 5%;
+	margin-bottom: 10px;
+}
+
+.part1 {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+
+.part1 img {
+	float: left;
+	margin-right: 3px;
+}
+
+.part2 {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+.part3 {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+.project_header {
+	background-color: #017dbc;
+	height: 60px;
+	margin-top: -19px;
+	color: white;
+	text-align: center;
+}
+
+.project_header2 {
+	background-color: #f99f2a;
+	height: 60px;
+	margin-top: -19px;
+	color: white;
+	text-align: center;
+}
+
+.project_header h3 {
+	padding-top: 10px;
+}
+
+.project_header h4 {
+	margin-top: -15px;
+	color: #EBECEC;
+}
+
+.project_header img {
+	border-right: 1px solid white;
+	float: left;
+}
+
+.project_part1 {
+	width: 49%;
+	float: left;
+	text-align: center;
+}
+
+.project_part2 {
+	width: 49%;
+	float: left;
+	margin-top: -10px;
+	text-align: center;
+}
+
+.project_part2 p {
+	margin-top: -10px;
+}
+
+button {
+	font-size: 12px;
+	background-color: #49A167;
+	color: white;
+}
+
+.project_holder {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.project_header2 h3 {
+	padding-top: 10px;
+}
+
+.project_header2 h4 {
+	margin-top: -15px;
+	color: #EBECEC;
+}
+
+.project_header2 img {
+	border-right: 1px solid white;
+	float: left;
+}
+

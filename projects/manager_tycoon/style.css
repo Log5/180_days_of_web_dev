@@ -263,6 +263,40 @@ footer a {
 
 .primary_font {font-family: 'Roboto', sans-serif; opacity: 0.8;}
 
+/** MEDIA QUERIES **/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#choose_name_box {
+		margin-top: 20%;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#choose_name_box {
+		margin-top: 20%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#choose_name_box {
+		margin-top: 10%;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#choose_name_box {
+		margin-top: 10%;
+	}
+}
 
 
 
