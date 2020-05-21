@@ -1,0 +1,270 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {font-size: 16px;}
+
+h1, h2, a, li, p, span, div {font-family: 'Open Sans', sans-serif;}
+
+/** SITE NAME BAR **/
+
+#site_name_bar {
+	text-align: left;
+	color: white;
+	background-color: black;
+	padding: 1rem;
+	letter-spacing: 0.1rem;
+}
+
+/** NAV BAR **/
+
+#navbar {
+	background-color: #DA3035;
+	padding: 15px;
+}
+
+#navbar ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+#navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	padding: 0 25px;
+}
+
+/** MOBILE NAV BAR **/
+
+#mobile_navbar {
+	text-align: right;
+	background-color: #DA3035;
+	padding: 5px 15px;
+	display: none;
+}
+
+#mobile_navbar a {
+	display: block;
+	color: white;
+	font-size: 2rem;
+}
+
+#extended_navbar {
+	display: none;
+}
+
+#extended_navbar a {
+	font-size: 0.9rem;
+	text-align: left;
+	text-decoration: none;
+	list-style: none;
+}
+
+/** BANNER **/
+
+#banner {
+	background-image: url(img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+
+/** CARDS CONTAINER **/
+
+#cards_container {
+	width: 90%;
+	margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card_box {
+	width: 23%;
+	box-shadow: 1px 1px 3px black;
+	margin-bottom: 40px;
+	min-height: 350px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.card_title {
+	background-color: #C3BFBF;
+	font-style: 0.9rem;
+	padding: 10px;
+}
+
+.card_img {
+	width: 90%;
+	height: 100px;
+	margin: 10px 10px;
+	overflow: hidden;
+}
+
+.card_img img {
+	width: 100%;
+}
+
+.card_subtitle {
+	font-style: 0.8rem;
+	padding: 0 10px;
+	color: #DA3035;
+}
+
+.card_date {
+	font-size: 0.7rem;
+	padding: 0 10px;
+}
+
+.card_text {
+	font-size: 0.8rem;
+	padding: 10px 10px;
+	overflow: scroll;
+}
+
+.card_button {
+	align-self: flex-end;
+	margin: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.card_button button {
+	padding: 7px;
+	background-color: #DA3035;
+	color: white;
+	border-radius: 10px;
+	border: 1px solid rgba(200,200,200,0.8);
+}
+
+/** MAIN CONTENT **/
+
+#main_container {
+	width: 90%;
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#welcome {
+	width: 80%;
+}
+
+#welcome h1 {
+	font-size: 2rem;
+	color: rgba(200,200,200,0.9);
+}
+
+#button_container {
+	width: 20%;
+	height: auto;
+}
+
+.button_box {
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: #DA3035;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px black;
+}
+
+#facebook {background-color: #3A5795;}
+.button_box span {font-size: 3rem;}
+.button_box p {font-size: 2rem;}
+
+#video {
+	width: 70%;
+	height: auto;
+}
+
+#video video {
+	width: 100%;
+}
+
+/** END MESSAGE **/
+
+#end_message {
+	width: 90%;
+	margin: 40px auto;
+}
+
+#end_message img {
+	width: 100%;
+	height: auto;
+}
+
+/** FOOTER **/
+
+footer {
+	background-color: #DA3035;
+	color: white;
+	font-size: 0.8em;
+	text-align: left;
+	padding: 20px;
+}
+
+
+/** MEDIA QUERIES **/
+
+@media only screen and (min-width: 300px) {
+
+	nav {display: none;}
+
+	#mobile_navbar {display: block;}
+
+	.card_box {width: 80%;}
+
+	#welcome {width: 100%}
+	#button_container {width: 80%;}
+}
+
+@media only screen and (min-width: 700px) {
+
+	nav a {font-size: 0.7rem;}
+
+	.card_box {width: 80%;}
+}
+
+
+@media only screen and (min-width: 860px) {
+
+	nav {display: none;}
+
+	#mobile_navbar {display: block;}
+
+	.card_box {width: 40%;}
+}
+
+
+@media only screen and (min-width: 970px) {
+
+	nav a {font-size: 0.7rem;}
+
+	.card_box {width: 45%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
