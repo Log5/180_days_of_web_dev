@@ -10,6 +10,8 @@ html {font-size: 16px;}
 
 h1, h2, a, li, p, span, div {font-family: 'Open Sans', sans-serif;}
 
+ul, li {list-style: none;}
+
 /** SITE NAME BAR **/
 
 #site_name_bar {
@@ -30,7 +32,6 @@ h1, h2, a, li, p, span, div {font-family: 'Open Sans', sans-serif;}
 #navbar ul {
 	display: flex;
 	justify-content: center;
-	list-style: none;
 }
 
 #navbar a {
@@ -56,15 +57,13 @@ h1, h2, a, li, p, span, div {font-family: 'Open Sans', sans-serif;}
 	font-size: 2rem;
 }
 
-#extended_navbar {
-	display: none;
-}
+#extended_navbar {display: none;}
 
 #extended_navbar a {
 	font-size: 0.9rem;
+	padding-bottom: 5px;
 	text-align: left;
 	text-decoration: none;
-	list-style: none;
 }
 
 /** BANNER **/
@@ -166,19 +165,24 @@ h1, h2, a, li, p, span, div {font-family: 'Open Sans', sans-serif;}
 }
 
 #button_container {
-	width: 20%;
-	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
 }
 
 .button_box {
 	width: 100%;
+	text-align: center;
 	margin-bottom: 10px;
 	background-color: #DA3035;
 	color: white;
-	text-align: center;
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 1px 1px 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #facebook {background-color: #3A5795;}
@@ -197,13 +201,14 @@ h1, h2, a, li, p, span, div {font-family: 'Open Sans', sans-serif;}
 /** END MESSAGE **/
 
 #end_message {
-	width: 90%;
+	width: 100%;
 	margin: 40px auto;
 }
 
 #end_message img {
 	width: 100%;
 	height: auto;
+	margin-bottom: 30px;	
 }
 
 /** FOOTER **/
@@ -219,42 +224,69 @@ footer {
 
 /** MEDIA QUERIES **/
 
-@media only screen and (min-width: 300px) {
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 	nav {display: none;}
 
 	#mobile_navbar {display: block;}
 
-	.card_box {width: 80%;}
+	.card_box {width: 100%;}
 
-	#welcome {width: 100%}
-	#button_container {width: 80%;}
+	#welcome {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.button_box {margin: 0 10px;}
+	.button_box span {font-size: 1.5rem;}
+	.button_box p {font-size: 1rem;}
+
+	#video {
+		width: 100%;
+		margin-top: 30px;
+	}
 }
 
-@media only screen and (min-width: 700px) {
-
-	nav a {font-size: 0.7rem;}
-
-	.card_box {width: 80%;}
-}
-
-
-@media only screen and (min-width: 860px) {
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 	nav {display: none;}
 
 	#mobile_navbar {display: block;}
-
-	.card_box {width: 40%;}
-}
-
-
-@media only screen and (min-width: 970px) {
-
-	nav a {font-size: 0.7rem;}
 
 	.card_box {width: 45%;}
+
+	#welcome {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.button_box {margin: 0 10px;}
+	.button_box span {font-size: 1.5rem;}
+	.button_box p {font-size: 1rem;}
+
+	#video {
+		width: 100%;
+		margin-top: 30px;
+	}
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.card_box {width: 23%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	nav {display: block;}
+	#mobile_navbar {display: none;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#mobile_navbar {display: none;}
+
+}
+
 
 
 
