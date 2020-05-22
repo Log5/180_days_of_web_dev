@@ -1,0 +1,288 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {font-size: 16px;}
+
+h1, h2, h3, h4, h5, p, div, span, a, li {font-family: "Helvetica"; color: seashell}
+
+body {background-color: black;}
+
+li {list-style: none;}
+
+/** HEADER **/
+
+#header {
+	width: 100%;
+	background-color: black;
+	font-size: 22px;
+	opacity: 0.9;
+	height: 69px;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid seashell;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	height: 50px;
+}
+
+#desktop_menu {display: flex; align-items: center;}
+
+#desktop_menu li {display: inline-block;}
+
+#header a {
+	font-size: 1.2rem;
+	opacity: 0.9;
+	padding-right: 20px;
+}
+
+/** MOBILE MENU **/
+
+#mobile_menu {
+	text-align: right;
+	padding: 5px 15px;
+	display: none;
+}
+
+#mobile_menu a {
+	display: block;
+	font-size: 2rem;
+}
+
+#extended_navbar {
+	display: none;
+	background-color: black;
+	padding: 20px;
+}
+
+#extended_navbar a {
+	font-size: 0.9rem;
+	padding-bottom: 5px;
+	text-align: left;
+	text-decoration: none;
+}
+
+/** BANNER **/
+
+#banner {
+	width: 100%;
+	background-image: url(img/mission.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#mid_banner {
+	text-align: center;
+	background-color: black;
+	opacity: 0.9;
+	width: 100%;
+	padding: 10px;
+	font-size: 1.2rem;
+	line-height: 2.5rem;
+}
+
+
+/** TEA OF THE MONTH **/
+
+#tea_month {
+	width: 100%;
+	text-align: center;
+	margin: 40px auto;
+}
+
+#month_title {
+	margin: 40px;
+}
+
+.card_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card_box {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: auto;
+	margin: 10px;
+}
+
+.card_img {
+	width: 100%;
+	height: 200px;
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.card_title {
+	text-align: center;
+	padding: 10px;
+}
+
+
+/** LOCATIONS **/
+
+#locations {
+	background-image: url(img/locations.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#locations_title {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-top: 15%;
+	font-size: 1.5rem;
+}
+
+#locations_boxes_container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.locations_card {
+	background-color: black;
+	width: 20%;
+	text-align: center;
+	padding: 20px;
+	margin: 20px 0;
+	line-height: 3rem;
+	border: 1px solid seashell;
+	box-shadow: 3px 3px 5px black;
+}
+
+/** CONTACT **/
+
+#contact {
+	text-align: center;
+	line-height: 3rem;
+	padding: 40px;
+}
+
+/** FOOTER **/
+
+footer {
+	text-align: left;
+	padding: 10px;
+	font-size: 0.8rem;
+}
+
+
+/** MEDIA QUERIES **/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#desktop_menu {
+		display: none;
+	}
+
+	#mobile_menu {
+		display: block;
+	}
+
+	.card_box {
+		width: 80%;
+	}
+
+	#locations_title {padding-top: 20px;}
+
+	.locations_card {
+		width: 80%;
+		line-height: 1.5rem;
+		margin-top: 10px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.card_box {
+		width: 40%;
+	}
+
+	#locations_title {padding-top: 20px;}
+
+	.locations_card {
+		width: 80%;
+		line-height: 1.5rem;
+		margin-top: 10px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.locations_card {
+		width: 40%;
+		line-height: 1.5rem;
+		margin-top: 10px;
+	}
+
+	#locations {justify-content: center;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.locations_card {
+		width: 20%;
+		line-height: 1.5rem;
+		margin-top: 10px;
+	}
+
+	.card_box {
+		width: 30%;
+	}
+
+	.locations_card {
+		padding: 20px;
+		line-height: 3rem;
+	}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

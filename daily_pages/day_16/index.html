@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 16 - Project Cosy Tea</title>
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<script src="https://kit.fontawesome.com/a20c003859.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+	<nav id="header">
+		<img id="logo" src="img/logo.png">
+		<ul id="desktop_menu">
+			<li><a href="#">Mission</a></li>
+			<li><a href="#">Featured Tea</a></li>
+			<li><a href="#">Locations</a></li>
+		</ul>
+
+		<!-- MOBILE MENU -->
+		<nav id="mobile_menu">
+		<a href="#" onclick="menu()"><i class="fas fa-bars"></i></a>
+		<div id="extended_navbar">
+			<ul>
+				<li><a href="#">Mission</a></li>
+				<li><a href="#">Featured Tea</a></li>
+				<li><a href="#">Locations</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	</nav>
+
+	<!-- BANNER -->
+	<div id="banner">
+		<div id="mid_banner">
+			<h2>Our Mission</h2>
+			<h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+		</div>
+	</div>
+
+	<!-- TEA OF THE MONTH -->
+	<section id="tea_month">
+		
+		<div id="month_title">
+			<h2>Tea of the Month</h2>
+			<h4>What's Steeping at The Tea Cozy</h4>
+		</div>
+
+		<div class="card_container">
+			
+			<div class="card_box">
+				<img class="card_img" src="img/berryblitz.jpg">
+				<h3 class="card_title">Fall Berry Blitz Team</h3>
+			</div>
+
+			<div class="card_box">
+				<img class="card_img" src="img/spiced.jpg">
+				<h3 class="card_title">Spiced Rum Tea</h3>
+			</div>
+
+			<div class="card_box">
+				<img class="card_img" src="img/donut.jpg">
+				<h3 class="card_title">Seasonal Donuts</h3>
+			</div>
+
+			<div class="card_box">
+				<img class="card_img" src="img/myrtle.jpg">
+				<h3 class="card_title">Myrtle Ave Tea</h3>
+			</div>
+
+			<div class="card_box">
+				<img class="card_img" src="img/bedford.jpg">
+				<h3 class="card_title">Bedford Bizarre Tea</h3>
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- LOCATIONS -->
+	<section id="locations">
+		
+		<div id="locations_title">
+			<div>
+				<h2>Locations</h2>
+			</div>
+		</div>
+
+		<div id="locations_boxes_container">
+			
+			<div class="locations_card">
+				<h2>Downtown</h2>
+				<h4>384 West 4th St</h4>
+				<h4>Suite 108</h4>
+				<h4>Portland, Maine</h4>
+			</div>
+
+			<div class="locations_card">
+				<h2>East Bayside</h2>
+				<h4>3433 Phisherman's Avenue</h4>
+				<h4>(Northwest Corner)</h4>
+				<h4>Portland, Maine</h4>
+			</div>
+
+			<div class="locations_card">
+				<h2>Oakdale</h2>
+				<h4>515 Crescent Avenue</h4>
+				<h4>Second Floor</h4>
+				<h4>Portland, Maine</h4>
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- CONTACT -->
+	<section id="contact">
+		<h1>The Tea Cosy</h1>
+		<h5>contact@theteacozy.com</h5>
+		<h5>917-555-8904</h5>
+	</section>
+
+	<!-- FOOTER --> 
+	<footer>
+		<p>Copyrigth The Tea Cosy 2020</p>
+	</footer>
+
+
+<script type="text/javascript">
+	let open = false;
+
+	function menu() {
+
+		if (open === false) {
+			document.getElementById("extended_navbar").style.display = "block";
+			return open = true;
+		};
+
+		if (open === true) {
+			document.getElementById("extended_navbar").style.display = "none";
+			return open = false;
+		}
+	}
+</script>
+</body>
+</html>
