@@ -1,0 +1,199 @@
+/**
+
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+
+**/
+
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, div, span, li, a {
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(40, 65, 119);
+}
+
+li {list-style: none;}
+a {text-decoration: none;}
+
+/** BANNER **/
+
+#banner {
+	width: 100%;
+	height: 80vh;
+	background-image: url(img/banner-mobile.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	box-shadow: inset 0px 150px 210px black;
+}
+
+#triangle {
+	position: absolute;
+	bottom: -1px;
+	height: 52px;
+	background-size: 100% 100%;
+	width: 101%;
+}
+
+
+#title {
+	font-family: 'Great Vibes', cursive;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+	font-size: 1.5em;
+}
+
+#navbar h1, #navbar span {color: white;}
+
+/** MENU **/
+
+#menu {display: none;}
+
+#menu a {
+	color: white;
+	font-style: italic;
+	padding-left: 20px;
+	font-size: 0.8em;
+}
+
+#menu li {padding-bottom: 10px;}
+
+/** EXPLANATION **/
+
+.explanation {
+	padding: 20px;
+}
+
+.explanation h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.explanation img {
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+	box-shadow: 1px 1px 3px black;
+}
+
+/** FOOTER **/
+
+footer {
+	background-color: rgb(40, 65, 119);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+
+}
+
+footer div {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer i {
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 10px;
+}
+
+/** FADE IN **/
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/** MEDIA QUERIES **/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.explanation img {
+		height: 300px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.explanation img {
+		height: 350px;
+	}
+
+	#navbar {
+		font-size: 2em;
+	}
+}	
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.explanation {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.flex_wrap {
+		width: 40%;
+	}
+
+	.explanation img {
+		width: 40%;
+	}
+
+	#flex_order {
+		order: -1;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
