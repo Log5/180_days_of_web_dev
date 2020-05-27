@@ -1,0 +1,190 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {background-color: #EEE7D5}
+
+h1,h2,h3,h4,p,a,li,span,div {font-family: 'Roboto Slab', serif;}
+
+/** HEADER **/
+
+header {
+	text-align: center;
+	border-top: 3px solid #8D2424;
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	position: relative;
+}
+
+.navbar {
+	justify-content: space-between!important;
+}
+
+#navbar_title {
+	color: #8D2424;
+	font-size: 1em;
+}
+
+.nav-link {color: white!important}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#banner_text {
+	font-size: 2.5em;
+	color: white;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/** MOBILE NAVBAR **/
+
+#mobile_navbar {
+	padding: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#menu_icon {
+	color: #8D2424;
+}
+
+/** SECTIONS **/
+
+.section {
+	color: rgba(100,100,100,0.8);
+	margin: 30px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+}
+
+.text {
+	padding: 40px 20px;
+	max-width: 400px;
+}
+
+.svg_img {
+	width: 200px;
+	height: auto;
+}
+
+
+/** CONTACT **/
+
+#button_container {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 40px 0;
+}
+
+#contact_button {
+	padding: 10px;
+	border: 1px solid #8D2424;
+	border-radius: 10px;
+	background-color: rgba(141, 36, 36,0.2);
+	color: white;
+	font-size: 1.5em;
+	box-shadow: 1px 1px 3px black;
+}
+
+/** FOOTER **/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+#top_footer {
+	background-color: #1F1F1F;
+	padding: 20px;
+	text-align: center;
+}
+
+#bottom_footer {
+	background-color: #000000;
+	padding: 20px;
+	text-align: center;
+}
+
+/** MEDIA QUERIES **/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#order1 {order: 1;}
+	#order2 {order: 2;}
+	#order3 {order: 3;}
+
+	#navbar_title {font-size: 1.3em;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.svg_img {width: 280px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav {
+	    flex-direction: row;
+	    justify-content: flex-end!important;
+	    width: 100%;
+	}
+
+	.svg_img {width: 320px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

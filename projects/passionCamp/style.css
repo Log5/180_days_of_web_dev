@@ -1,0 +1,93 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p,div,span,a,li,button {
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+#body_page {
+	height: 100vh;
+	background-color: #00cba9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/** BOX **/
+
+.box {
+	padding: 30px;
+	width: 70%;
+	box-shadow: 3px 3px 10px black;
+	border-radius: 20px;
+}
+
+/** HEADER **/
+
+header h1 {
+	font-size: 2em;
+	padding: 20px;
+	text-align: center;
+}
+
+header h3 {
+	font-style: italic;
+	text-align: center;
+	margin-top: -20px;
+}
+
+/** QUIZZ **/
+
+#quizz {
+	text-align: center;
+}
+
+/** BROWSE **/
+
+#browse {
+	text-align: center;
+}
+
+/** FOOTER **/
+
+footer {
+	padding: 20px;
+	font-size: 0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
