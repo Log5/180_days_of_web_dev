@@ -1,0 +1,30 @@
+/** GENERAL SETTINGS **/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+	color: white;
+}
+
+h1,h2,h3,p,span,div,li,a {font-family: 'Open Sans', sans-serif;}
+
+/* HEADER */
+
+header {
+	text-align: center;
+	padding: 20px;
+	font-size: 2rem;
+	color: #457b9d;
+	border-bottom: 1px solid rgba(100,100,100,0.8);
+}
+
+
+
+
+
+
