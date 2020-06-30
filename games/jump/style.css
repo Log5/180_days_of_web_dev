@@ -1,0 +1,122 @@
+/* GENERAL SETTINGS */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* CANVA */
+
+.view_container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.canva {
+	background-color: rgba(200,200,200,0.6);
+	width: 300px;
+	height: 580px;
+	position: relative;
+	margin: auto auto;
+}
+
+#character {
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 10px;
+	left: 135px;	
+}
+
+#block {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+	top: 10px;
+	left: 140px;
+}
+
+#enemy {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+	top: 10px;
+	left: 100px;
+}
+
+.display_none {
+	display: none;
+}
+
+/* ANIMATION */
+
+@keyframes block {
+	0%{top: 10px}
+	100%{top: 560px}
+}
+
+@keyframes move_left {
+	0% {left:140px}
+	30% {left:50px}
+	70% {left:50px}
+	100% {left:140px}
+}
+
+@keyframes move_right {
+	0% {left:140px}
+	30% {left:210px}
+	70% {left:210px}
+	100% {left:140px}
+}
+
+
+.move_left {
+	animation: move_left 500ms linear;
+}
+
+.move_right {
+	animation: move_right 500ms linear;
+}
+
+.block_animation {
+	animation: block 1s infinite linear;
+}
+
+/* START GAME */
+
+#start_game_btn {
+	width: 100%;
+	height: 580px;
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: 30px;
+}
+
+#reset_game_btn {
+	width: 100%;
+	height: 580px;
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: 30px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+

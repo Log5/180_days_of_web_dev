@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jump</title>
+	<script src="https://kit.fontawesome.com/a20c003859.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="view_container">
+
+		<h4>Jump</h4>
+
+		<div id="canva" class="canva">
+
+			<div>
+				<button id="start_game_btn" onclick="start_game()">Start Game<br/><small>Use left & right arrows </br>to move</small></button>
+			</div>
+
+			<div>
+				<button id="reset_game_btn" onclick="reset_game()">
+					Restart
+				</button>
+			</div>
+
+			<div id="character"></div>
+			<div id="enemy"></div>
+		</div>
+
+		<h4>Score: <span id="score"></span></h4>
+
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
