@@ -64,8 +64,6 @@ nav:after {clear: both;}
 
 /** PORTFOLIO **/
 
-
-
 #portfolio_container {
 	display: flex;
 	justify-content: center;
@@ -90,8 +88,32 @@ nav:after {clear: both;}
 .portfolio_box h2 {
 	text-align: center;
 	font-size: 1em;
-	padding: 30px 0 10px 0;
+	padding: 10px 0 0 0;
 }
+
+.portfolio_box__project_details {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.tech_icons_bar {
+	display: flex;
+}
+
+.tech_icons {
+	width: 50px;
+    text-align: center;
+	font-size: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.html {background-color: #E44D26;}
+.css {background-color: #264DE4;}
+.rails {background-color: #932730;}
+.js {background-color: #F7DF1E;}
 
 /** PROJECTS **/
 

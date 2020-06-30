@@ -13,7 +13,7 @@
 
 	<nav>
 		<ul>		
-			<li><a href="mailto:loic.boset@gmail.com">Say hello!</a></li>
+			<li><a href="mailto:loic.boset@gmail.com" target="_blank">Say hello!</a></li>
 		</ul>
 	</nav>
 
@@ -33,24 +33,56 @@
 
 		<div id="portfolio_container">
 
-			<a href="daily_pages/day_17/index.html">
+			<a href="https://lb-boatnb.herokuapp.com/" onclick="heroku_alert()" target="_blank">
+				<div class="portfolio_box">
+					<img src="portfolio/img/project_boatnb.png" class="portfolio_img">
+					<div class="portfolio_box__project_details">
+						<div class="tech_icons_bar">
+							<span class="tech_icons rails">Rails</span>
+						</div>
+						<h2>Project Boatnb</h2>
+					</div>
+				</div>
+			</a>
+
+			<a href="daily_pages/day_17/index.html" target="_blank">
 				<div class="portfolio_box">
 					<img src="portfolio/img/project_overseas.png" class="portfolio_img">
-					<h2>Project Overseas</h2>
+					<div class="portfolio_box__project_details">
+						<div class="tech_icons_bar">
+							<span class="tech_icons html">HTML</span>
+							<span class="tech_icons css">CSS</span>
+							<span class="tech_icons js">JS</span>
+						</div>
+						<h2>Project Overseas</h2>
+					</div>
 				</div>
 			</a>
 
-			<a href="daily_pages/day_15/index.html">
+			<a href="daily_pages/day_15/index.html" target="_blank">
 				<div class="portfolio_box">
 					<img src="portfolio/img/project_black_wheels.png" class="portfolio_img">
-					<h2>Project Black Wheels</h2>
+					<div class="portfolio_box__project_details">
+						<div class="tech_icons_bar">
+							<span class="tech_icons html">HTML</span>
+							<span class="tech_icons css">CSS</span>
+						</div>
+						<h2>Project Black Wheels</h2>
+					</div>
+					
 				</div>
 			</a>
 
-			<a href="daily_pages/day_18/index.html">
+			<a href="daily_pages/day_18/index.html" target="_blank">
 				<div class="portfolio_box">
 					<img src="portfolio/img/project_lawyers.png" class="portfolio_img">
-					<h2>Project Lawyers</h2>
+					<div class="portfolio_box__project_details">
+						<div class="tech_icons_bar">
+							<span class="tech_icons html">HTML</span>
+							<span class="tech_icons css">CSS</span>
+						</div>
+						<h2>Project Lawyers</h2>
+					</div>
 				</div>
 			</a>
 
@@ -75,6 +107,16 @@
 		<li><a href="https://github.com/Log5/180_days_of_web_dev" target="_blank"><i class="fab fa-github"></i></a></li>
 		<p>Student at Le Wagon</p>
 	</footer>
+
+<!-- JAVASCRIPT -->
+
+<script type="text/javascript">
+	
+	function heroku_alert() {
+		alert("This website may take a few seconds to load. Please bear with me! :)")
+	}
+
+</script>
 
 </body>
 </html>
