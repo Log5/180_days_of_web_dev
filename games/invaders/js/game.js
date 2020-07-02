@@ -16,6 +16,7 @@ const ENEMY_LASER_COOLDOWN = 0.8 + Math.floor(Math.random()*5);
 const ENEMY_LASER_MAX_SPEED = 300;
 
 const GAME_STATE = {
+	gameOver: false,
 	lastTime: Date.now(),
 	playerX: 0,
 	playerY: 0,
@@ -197,6 +198,12 @@ function destroyEnemy($container, enemy) {
 	enemy.isDead = true;
 }
 
+function destroyPlayer($container, player) {
+	$container.removeChild(player);
+	GAME_STATE.gameOver = true;
+	document.querySelector(".game-over").style.display = "block";
+}
+
 // UDPATE ENEMY LASERS
 
 function updateEnemyLaser(dt, $container) {
@@ -209,12 +216,25 @@ function updateEnemyLaser(dt, $container) {
 		if (enemyLaser.y > GAME_HEIGHT) {
 			destroyLaser($container, enemyLaser);
 		}
+
+		const r1 = enemyLaser.$element.getBoundingClientRect();
+		const $player = document.querySelector(".player");
+		const r2 = $player.getBoundingClientRect();
+		if (intersection(r1, r2)) {
+			// Player was hit
+			destroyPlayer($container, $player);
+			destroyLaser($container, enemyLaser);
+			console.log("Game Over");
+			break;
+		}
 	}
 
 	GAME_STATE.enemyLasers = GAME_STATE.enemyLasers.filter(e => !e.isDead)
+
+
 }
 
-// CHECK INTERSECTION BETWEEN LASERS AND ENEMIES
+// CHECK INTERSECTION BETWEEN LASERS AND ENEMIES / PLAYER
 
 function intersection(r1, r2) {
 	return !(
@@ -232,10 +252,18 @@ function update() {
 	const dt = (currentTime - GAME_STATE.lastTime) / 1000;
 
 	const $container = document.querySelector(".game");
-	updatePlayer(dt, $container);
-	updateLasers(dt, $container);
-	updateEnemies(dt, $container);
-	updateEnemyLaser(dt, $container);
+	
+	if (!GAME_STATE.gameOver) {
+		updatePlayer(dt, $container);
+		updateLasers(dt, $container);
+		updateEnemies(dt, $container);
+		updateEnemyLaser(dt, $container);
+	}
+
+	if (GAME_STATE.enemies.length === 0) {
+		GAME_STATE.gameOver = true;
+		document.querySelector(".congratulations").style.display = "block";
+	}
 
 	GAME_STATE.lastTime = currentTime;
 	window.requestAnimationFrame(update);
