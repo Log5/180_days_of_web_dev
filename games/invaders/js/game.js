@@ -12,11 +12,11 @@ const PLAYER_MAX_SPEED = 600;
 const LASER_MAX_SPEED = 300;
 const LASER_COOLDOWN = 0.2;
 
-const ENEMY_LASER_COOLDOWN = 0.8 + Math.floor(Math.random()*5);
+const ENEMY_LASER_COOLDOWN = 0.9 + Math.floor(Math.random()*5);
 const ENEMY_LASER_MAX_SPEED = 300;
 
 const GAME_STATE = {
-	gameOver: false,
+	gameOver: true,
 	lastTime: Date.now(),
 	playerX: 0,
 	playerY: 0,
@@ -311,6 +311,40 @@ function init() {
 			createEnemy($container, x, y);
 		}
 	}
+}
+
+// (RE)START GAME FUNCTION
+
+function startGame() {
+	document.querySelector(".start-game").style.display = "none";
+	GAME_STATE.gameOver = false;
+}
+
+function restartGame() {
+	document.querySelector(".congratulations").style.display = "none";
+	document.querySelector(".game-over").style.display = "none";
+	GAME_STATE.gameOver = false;
+	const $container = document.querySelector(".game");
+	const enemies = GAME_STATE.enemies;
+	for (let i = 0; i < enemies.length; i++) {
+		let enemy = enemies[i];
+		destroyEnemy($container, enemy);
+	}
+
+	const enemyLasers = GAME_STATE.enemyLasers;
+
+	for (let i = 0; i < enemyLasers.length; i++) {
+		const enemyLaser = enemyLasers[i];
+		destroyLaser($container, enemyLaser);
+	}
+
+	const playerLasers = GAME_STATE.lasers;
+
+	for (let i = 0; i < playerLasers.length; i++) {
+		const playerLaser = playerLasers[i];
+		destroyLaser($container, playerLaser);
+	}
+	init();
 }
 
 
