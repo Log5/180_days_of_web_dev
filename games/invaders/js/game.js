@@ -26,7 +26,7 @@ const GAME_STATE = {
 	playerCooldown: 0,
 	lasers: [],
 	enemies: [],
-	enemiesCooldown: 0, 
+	enemiesCooldown: 0,
 	enemyLasers: []
 };
 
@@ -99,14 +99,14 @@ function createLaser($container, x, y) {
 }
 
 function createEnemyLaser($container, x, y) {
-	
+
 	const $element = document.createElement("img");
 	$element.src = "img/laser-red-12.png";
 	$element.className = "enemy-laser";
 	$container.appendChild($element);
 	const enemyLaser = {x, y, $element};
 	GAME_STATE.enemyLasers.push(enemyLaser);
-	setPostion($element, x, y);	
+	setPostion($element, x, y);
 }
 
 // UPDATE LASERS
@@ -144,7 +144,7 @@ function destroyLaser($container, laser) {
 	laser.isDead = true;
 }
 
-// CREATE ENEMIES FUNCTION 
+// CREATE ENEMIES FUNCTION
 
 function createEnemy($container, x, y) {
 	const $element = document.createElement("img");
@@ -187,7 +187,7 @@ function updateEnemies(dt, $container) {
 			GAME_STATE.enemies[i].laserFired = false;
 			GAME_STATE.enemiesCooldown -= dt;
 		}
-		
+
 	}
 
 	GAME_STATE.enemies = GAME_STATE.enemies.filter(e => !e.isDead);
@@ -199,9 +199,10 @@ function destroyEnemy($container, enemy) {
 }
 
 function destroyPlayer($container, player) {
-	$container.removeChild(player);
-	GAME_STATE.gameOver = true;
-	document.querySelector(".game-over").style.display = "block";
+  $container.removeChild(player);
+  GAME_STATE.gameOver = true;
+  document.querySelector(".game-over").style.display = "block";
+  console.log("Player destroyed");
 }
 
 // UDPATE ENEMY LASERS
@@ -241,7 +242,7 @@ function intersection(r1, r2) {
 		r1.left > r2.right ||
 		r1.right < r2.left ||
 		r1.top > r2.bottom ||
-		r1.bottom < r2.top 
+		r1.bottom < r2.top
 		)
 }
 
@@ -252,7 +253,7 @@ function update() {
 	const dt = (currentTime - GAME_STATE.lastTime) / 1000;
 
 	const $container = document.querySelector(".game");
-	
+
 	if (!GAME_STATE.gameOver) {
 		updatePlayer(dt, $container);
 		updateLasers(dt, $container);
@@ -343,7 +344,14 @@ function restartGame() {
 	for (let i = 0; i < playerLasers.length; i++) {
 		const playerLaser = playerLasers[i];
 		destroyLaser($container, playerLaser);
-	}
+  }
+
+  if (document.querySelector(".player")) {
+    const $player = document.querySelector(".player");
+    $container.removeChild($player);
+  }
+  console.log("End of restart function");
+
 	init();
 }
 
